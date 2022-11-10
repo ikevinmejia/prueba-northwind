@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Prueba Northwind Datos Maestros.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto se construyó con el objetivo de visualizar los departamentos y municipios de Colombia partiendo del consumo de dos API para la consulta, además, se insertar información adicional por departamento para contextualizar mejor al usuario y con diseño responsive.
 
-## Available Scripts
+Como contexto extra y no menos importante se detallan los retos a desempeñar para la ejecución de la app:
 
-In the project directory, you can run:
+Al momento de terminar de configurar el proyecto el servidor del API arrojó el codigo de error 301 lo que frenó el desarrollo, no obstante, se deja indicación del estado de desarrollo de la app en la cual solo falta gestionar el renderizado para evitar recargar la pagina para mostrar los datos, como solución propuesta se considera el uso del hook useEffect para la gestión del renderizado al consumir los datos del API.
 
-### `npm start`
+Así mismo, para el consumo de datos se decidió por usar useContext para manejo de estado al ser un app pequeña y no requerir de Redux, se usó el sesionStorage para la comunicación entre la primera y segunda tabla de datos, y para finalizar, el consumo del API se intentó optimizar al máximo con el fin de ahorrar recursos y construir un solo arreglo de objetos con la información solicitada demostrando así el uso de métodos de para manipular arreglos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Comenzando 🚀
 
-### `npm test`
+Aplicación construida con CREATE REACT APP.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pre-requisitos 📋
 
-### `npm run build`
+Para adquirir el código fuente debe descargar los archivos o hacer un git clone.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Instalación 🔧
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Intalar paquetes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+```
 
-### `npm run eject`
+Ejecutar servidor de desarrollo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm run start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Despliegue 📦
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ejecutar el comando
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm run build
+```
 
-## Learn More
+## Construido con 🛠️
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [REACT](https://es.reactjs.org/) - Librería web usado
+- [Tailwind](https://tailwindcss.com/) - Marco de trabajo CSS
+- [POSTCSS](https://postcss.org/) - Post procesador CSS
+- [MATERIAL UI](https://mui.com/) - Framework de CSS.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Versionado 📌
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Usamos [Git](https://git-scm.com/) para el versionado. Para todas las versiones disponibles.
 
-### Analyzing the Bundle Size
+## Autor ✒️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Kevin Mejia** - [ikevinmejia](https://github.com/ikevinmejia)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Licencia 📄
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está bajo la Licencia MIT.
