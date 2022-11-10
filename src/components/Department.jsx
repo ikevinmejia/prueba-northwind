@@ -15,7 +15,6 @@ const handleClick = async(event, cellValues) => {
     const resp = await getData(`${urlCityByDepartment}${cellValues.row.id}`)
     sessionStorage.setItem('data', JSON.stringify(resp))
     sessionStorage.setItem('moreData', JSON.stringify(cellValues.row))
-
 }
 
 const handleCellClick = (param, event) => {
@@ -58,7 +57,7 @@ const Department = () => {
     }, []);
 
   return (
-    <div className='w-full overflow-auto mt-5'>
+    <div className='w-full mt-5 overflow-auto'>
         <Box style={{ height: 500, width: '100%', margin: '0 auto', display: 'table', tableLayout: 'fixed' }}>
             {
                 departments ?
@@ -70,13 +69,14 @@ const Department = () => {
                 onCellClick={handleCellClick}
             />
             :
-
-            <Ring
-             size={40}
-             lineWeight={5}
-             speed={2}
-             color="black"
-            />
+                <div className='flex items-center justify-center w-full'>
+                    <Ring
+                     size={40}
+                     lineWeight={5}
+                     speed={2}
+                     color="grey"
+                    />
+                </div>
             }
     </Box>
     </div>

@@ -25,9 +25,9 @@ const Details = () => {
         {
             cities ?
         <div className="mt-4">
-          <h2 className="font-semibold text-2xl mb-4">{id.name}</h2>
-          <p className="font-medium mb-4">{id.description.description}</p>
-          <h3 className="font-semibold text-2xl mb-4">Ciudad</h3>
+          <h2 className="mb-4 text-2xl font-semibold">{id.name}</h2>
+          <p className="mb-4 font-medium">{id.description.description}</p>
+          <h3 className="mb-4 text-2xl font-semibold">Ciudad</h3>
           <Box
             style={{
                 height: 400,
@@ -45,12 +45,16 @@ const Details = () => {
             />
           </Box>
         </div>
-        : <Ring
-            size={40}
-            lineWeight={5}
-            speed={2}
-            color="black"
-           />
+        :
+        <div className='flex items-center justify-center w-full'>
+
+          <Ring
+              size={40}
+              lineWeight={5}
+              speed={2}
+              color="grey"
+             />
+        </div>
         }
     </div>
   );
